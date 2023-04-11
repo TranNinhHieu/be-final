@@ -22,7 +22,7 @@ const bootServer = () => {
 
     app.use('/v1', apiV1)
 
-    app.listen(env.APP_PORT || process.env.PORT, () => {
+    app.listen(env.APP_PORT || process.env.PORT||4500, () => {
         console.log(`Hello Comic, I'm running at :${process.env.PORT}/`)
     })
 }
